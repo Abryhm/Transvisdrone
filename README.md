@@ -9,6 +9,11 @@ Major Update: Paper Accepted to 2023 IEEE International Conference on Robotics a
 # Processing NPS Dataset
 Download annotations from [Dogfight Github](https://github.com/mwaseema/Drone-Detection?tab=readme-ov-file#annotations) understand the annotation format.
 Download the videos from the Original [NPS site](https://engineering.purdue.edu/~bouman/UAV_Dataset/)
+
+# Installation
+1: For the installation, follow the [mmdetection installation](https://mmdetection.readthedocs.io/en/latest/get_started.html) \\
+2: Install the "pip install -r requirements.txt"
+
 ## Step 1: 
 <strong>For the NPS dataset </strong>
 Extract all the frames and masks by using the "video_to_frames_and masks.py" .<be>
