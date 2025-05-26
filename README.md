@@ -18,9 +18,9 @@ By using the file "map_masks_images.py," convert the masks into YOLO.txt  format
 Order the names of the frames and labels images by using "reorder_images_labels.py".
 ## Step 4: 
 Rename the images and labels from "000xxx.png" to "00xxx.png" by using the "rename_images_labels.py".
-use every 4th frame but all the frames in training & testing.
+
 ## Step 5 :
-Train, Val, Test split followed as in  [dogfight paper](https://arxiv.org/pdf/2103.17242.pdf). (train 0-36, val 37-40 and test 41-50) for all images labels and videos. 
+Train, Val, Test split followed as in  [dogfight paper](https://arxiv.org/pdf/2103.17242.pdf). (train 0-36, val 37-40, and test 41-50) for all images, labels, and videos. 
 Please change the root paths accordingly in [NPS.yaml](./data/NPS.yaml)
 
 
@@ -31,8 +31,8 @@ Please follow whatever parameters are set .
 In training  refers to 24GB NVIDIA ampere gpu.
 
 # Evaluate NPS results
-For validation "python val.py --data data/NPS_original.yaml --weights runs/train/T2/weights/last.pt --batch-size 5 --img 1280 --num-frames 1 --project runs/train/ --name best --task test --exist-ok --save-aot-predictions --save-json-gt
-" 
+For validation "python val.py --data data/NPS_original.yaml --weights runs/train/T2/weights/last.pt --batch-size 5 --img 1280 --num-frames 1 --project runs/train/ --name best --task test --exist-ok --save-aot-predictions --save-json-gt" 
+
 For Detect or Inferance use "inference.py" 
 
 # Citation
