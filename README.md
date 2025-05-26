@@ -21,7 +21,7 @@ Rename the images and labels from "000xxx.png" to "00xxx.png" by using the "rena
 use every 4th frame but all the frames in training & testing.
 ## Step 5 :
 [Convert visdrone to yolov5 style](./conversion_scripts/VisDrone_original_2YOLO_lable.py) Please change the root paths accordingly.
-Train, Val, Test split followed as in [dogfight paper](https://arxiv.org/pdf/2103.17242.pdf). (train clip 0-37,3 val 
+Train, Val, Test split followed as in [dogfight paper](https://arxiv.org/pdf/2103.17242.pdf). (train 0-36, val 37-40 and test 41-50)_
 
 Finally make into the format of [NPS.yaml](./data/NPS.yaml) where there are train & val folders containing frames in Clip_{id}_{frame_id.zfill(5)}.png & annotations in the format of Clip_{id}_{frame_id.zfill(5)}.txt in yolov5 format.
 Videos folder with either videos symlinks in it or video_length_dict.pkl where its a python dictionary stored in {"int(video_id)": "int(num_frames)"}.
