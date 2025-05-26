@@ -50,8 +50,10 @@ Download the videos from the Original [NPS site](https://engineering.purdue.edu/
 5. Use the augmentation hyperparameter settings for single frame "data/hyps/hyp.VisDrone_1.yaml", for three frames "data/hyps/hyp.VisDrone_3.yaml", and for five frames "data/hyps/hyp.VisDrone.yaml" 
 
 
-<strong> For training using hyp.VisDrone_1.yaml (i.e., 1 frame) and batch size 4, we need a 24GB GPU such as the NVIDIA GPU 4090. </strong>
-<strong> For training using hyp.VisDrone_3.yaml or hyp.VisDrone.yaml (i.e., 3 or frame) and batch size 4, we need a 48GB GPU </strong> 
+<strong> For training using hyp.VisDrone_1.yaml (i.e., 1 frame) and batch size 4, we need a 24GB GPU such as the NVIDIA GPU 4090. </strong> 
+
+<strong> For training using hyp.VisDrone_3.yaml or hyp.VisDrone.yaml (i.e., 3 or 5 frames) and batch size 4, we need a 48GB GPU </strong> 
+
 <strong> The batch size can be reduced to low resources </strong>
 
 
