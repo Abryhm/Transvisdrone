@@ -11,11 +11,12 @@ Download annotations from [Dogfight Github](https://github.com/mwaseema/Drone-De
 Download the videos from the Original [NPS site](https://engineering.purdue.edu/~bouman/UAV_Dataset/)
 
 # Installation
+
 0: git clone https://github.com/Abryhm/Transvisdrone.git
 
-1:conda create --name transvisdrone python==3.9
+1: conda create --name transvisdrone python==3.9
 
-2: coda activate transvisdrone
+2: conda activate transvisdrone
 
 3: For the installation, install cuda and pytorch "conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge"
 
