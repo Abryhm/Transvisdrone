@@ -53,7 +53,7 @@ If you find our work useful in your research, please consider citing:
 # Contact
 If you have any questions for this repostry , please feel free to contact us:
 
-[Abdul rehman ]: [phdcs23002@itu.edu.pk](mailto:phdcs23002@itu.edu.pk)
+[Abdul rehman ](https://www.linkedin.com/in/abdul-rehman-079348122/): [phdcs23002@itu.edu.pk](mailto:phdcs23002@itu.edu.pk)
 
 
 # References
