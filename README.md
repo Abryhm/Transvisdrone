@@ -11,7 +11,8 @@ Download annotations from [Dogfight Github](https://github.com/mwaseema/Drone-De
 Download the videos from the Original [NPS site](https://engineering.purdue.edu/~bouman/UAV_Dataset/)
 
 # Installation
-1: For the installation, follow the [mmdetection installation](https://mmdetection.readthedocs.io/en/latest/get_started.html) \\
+1: For the installation, follow the [mmdetection installation](https://mmdetection.readthedocs.io/en/latest/get_started.html)
+
 2: Install the "pip install -r requirements.txt"
 
 ## Step 1: 
