@@ -3,24 +3,22 @@ Arxiv Preprint: https://arxiv.org/abs/2210.08423
 
 Major Update: Paper Accepted to 2023 IEEE International Conference on Robotics and Automation (**ICRA**) 🎉 
 
-[Project Page link](https://tusharsangam.github.io/TransVisDrone-project-page/)
+[Project Page link](https://tusharsangam.github.io/TransVisDrone-project-page/) of original repository. (https://github.com/tusharsangam/TransVisDrone/blob/main/README.md)
 
-[Pretrained models available at Drive](https://drive.google.com/drive/folders/1zOy_zIxkrvmHBIPU72PB_o0Da-h0h5JA?usp=sharing)
  
-Codes and Visualizations coming soon! 
-Cleaning up training & validation runs, will upload pretrained models soon
-
-# Processing NPS daataset
+# Processing NPS Dataset
 Download annotations from [Dogfight Github](https://github.com/mwaseema/Drone-Detection?tab=readme-ov-file#annotations) understand the annotation format.
 Download the videos from Original [NPS site](https://engineering.purdue.edu/~bouman/UAV_Dataset/)
-Extract all the frames in folder called AllFrames starting from 0th index (without skip), plot annotations over videos to verify annotations are mapping to videos.<br>
-<strong>This applies to NPS only,</strong>
-My original frame extraction & annotations of NPS starts from index 0 but to follow tph-yolov5's visdrone style I converted 0 index to 1 index in [Step 1](#step1). However this is not reuired for FL-drones & AOT dataset processing.
+## Step 1: 
+<strong>For the NPS dataset </strong>
+Extract all the frames and masks by using the "video_to_frames_and masks.py" .<be>
+## Step 2 : 
+By using the file "map_masks_images.py," convert the masks into YOLO.txt  format. 
+## Step 3 :
+Rename and order the names of the frames and labels images by using "reorder_images_labels.py".
+## Step 4: 
+Rename the images and labels from "000xxx.png" to "00xxx.png" by using the "rename_images_labels.py".
 
-## Step1 : 
-To account for that I created [conversion script nps_to_visdrone.py](./conversion_scripts/nps_to_visdrone.py) to symlink data with index offseting.
-
-## Step2 :
 [Convert visdrone to yolov5 style](./conversion_scripts/VisDrone_original_2YOLO_lable.py) Please change the root paths accordingly.
 Train, Val, Test split followed as in [dogfight paper](https://arxiv.org/pdf/2103.17242.pdf). However contrary to dogfight we don't only use every 4th frame but all the frames in training & testing.
 ## Step3:
