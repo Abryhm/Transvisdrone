@@ -11,7 +11,7 @@ Download annotations from [Dogfight Github](https://github.com/mwaseema/Drone-De
 Download the videos from the Original [NPS site](https://engineering.purdue.edu/~bouman/UAV_Dataset/)
 
 # Installation
-1: For the installation, follow the [mmdetection installation](https://mmdetection.readthedocs.io/en/latest/get_started.html)
+1: For the installation, install cuda and pytorch "conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge"
 
 2: Install the "pip install -r requirements.txt"
 
