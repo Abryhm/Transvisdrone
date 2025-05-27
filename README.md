@@ -7,15 +7,15 @@ Major Update: Paper Accepted to 2023 IEEE International Conference on Robotics a
 
 # Installation
 
-0: git clone https://github.com/Abryhm/Transvisdrone.git
+1: git clone https://github.com/Abryhm/Transvisdrone.git
 
-1: conda create --name transvisdrone python==3.9
+2: conda create --name transvisdrone python==3.9
 
-2: conda activate transvisdrone
+3: conda activate transvisdrone
 
-3: For the installation, install CUDA and PyTorch "conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge"
+4: For the installation, install CUDA and PyTorch "conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge"
 
-4: Install the "pip install -r requirements.txt"
+5: Install the "pip install -r requirements.txt"
 
 
 # Processing NPS Dataset
@@ -68,7 +68,7 @@ The training can be done using the following parameters:
 # Evaluation
 For validation "python val.py --data data/NPS.yaml --weights runs/train/T2/weights/last.pt --batch-size 5 --img 1280 --num-frames 1 --project runs/train/ --name best --task test --exist-ok --save-aot-predictions --save-json-gt" 
 
-<strong> To plot the detections, use  "python inference.py --data data/NPS.yaml --task test --weights runs/train/T2/weights/last.pt --img 1280" --conf-thres 0.1 <strong>  
+<strong> To plot the detections, use  "python inference.py --data data/NPS.yaml --task test --weights runs/train/T2/weights/last.pt --img 1280 --conf-thres 0.1 <strong>  
 
 # Citation
 If you find our work useful in your research, please consider citing:
