@@ -29,4 +29,4 @@ mosaic: 1.0
 mixup: 0.2
 double_mixup: 0.0
 copy_paste: 0.0
-frame_wise: 0
+frame_wise: 1
